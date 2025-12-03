@@ -230,12 +230,11 @@ function Hero() {
       </div>
 
       {/* EMAIL */}
-      <div className="container-email">
+      <div className="container-email" id="socials">
         <div className="socials-email">
-          <a
-            className="main-navigation-link"
-            href="mailto:coder.gabrielsantos@gmail.com"
-          >
+          <a className="main-navigation-link"
+             href="mailto: coder.gabrielsantos@gmail.com">
+
             <p className="email">coder.gabrielsantos@gmail.com</p>
           </a>
         </div>
