@@ -8,11 +8,8 @@ function Projects() {
 
   const [firstProjectVisible, setFirstProjectVisible] = useState(false);
   const [secondProjectVisible, setSecondProjectVisible] = useState(false);
-  const [thirdProjectVisible, setThirdProjectVisible] = useState(false);
-
   const [firstProjectAlreadyShowed, setFirstProjectAlreadyShowed] = useState(false);
   const [secondProjectAlreadyShowed, setSecondProjectAlreadyShowed] = useState(false);
-  const [thirdProjectAlreadyShowed, setThirdProjectAlreadyShowed] = useState(false);
 
   return (
     <VisibilitySensor partialVisibility={0.8} onChange={!alreadyShowed && setIsVisible}>
@@ -47,27 +44,27 @@ function Projects() {
                 <div className="step-text-box">
                   <p className="step-number">01</p>
 
-                  <a href="https://github.com/JoGabriel-Santos/friendly" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/coder-gabrielsantos/sigecon-client" target="_blank" rel="noreferrer">
                     <h3 className="heading-tertiary step-tittle">
-                      Friendly
+                      Sigecon
                     </h3>
                   </a>
 
                   <p className="step-description">
-                    Revolutionize communication with a global touch – Friendly, crafted with React Native, Node.js, and MongoDB,
-                    seamlessly simulates worldwide letter exchanges, bringing a nostalgic charm to modern connectivity.
+                    Developed SIGECON, a cloud platform that automates municipal contract and service-order management,
+                    replacing manual Excel workflows. Includes automated data extraction from uploaded documents,
+                    fast service-order generation, and features such as contract tracking, balance control, reporting, and user authentication.
                   </p>
 
                   <div className="technology-used">
                     <i className="bi bi-filetype-jsx"></i>
                     <i className="bi bi-filetype-css"></i>
-                    <i className="bi bi-phone-fill"></i>
                   </div>
                 </div>
 
-                <a href="https://github.com/JoGabriel-Santos/friendly" target="_blank" rel="noreferrer">
+                <a href="https://github.com/coder-gabrielsantos/sigecon-client" target="_blank" rel="noreferrer">
                   <div className="step-image-box step-image-box-text-first">
-                    <img className="step-image" src={require('../util/projects/friendly.png')} alt=""/>
+                    <img className="step-image" src={require('../util/projects/sigecon.png')} alt=""/>
                   </div>
                 </a>
               </div>
@@ -84,27 +81,26 @@ function Projects() {
 
               <div className="container grid grid--center-v grid-projects-padding grid-projects-image-first">
                 <a className="grid-projects-img"
-                   href="https://github.com/JoGabriel-Santos/airbnb-clone"
+                   href="https://github.com/coder-gabrielsantos/nursia-client"
                    target="_blank" rel="noreferrer">
 
                   <div className="step-image-box step-image-box-image-first">
-                    <img className="step-image" src={require('../util/projects/airbnb.png')} alt=""/>
+                    <img className="step-image" src={require('../util/projects/nursia.png')} alt=""/>
                   </div>
                 </a>
 
                 <div className="step-text-box">
                   <p className="step-number">02</p>
 
-                  <a href="https://github.com/JoGabriel-Santos/airbnb-clone" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/coder-gabrielsantos/nursia-client" target="_blank" rel="noreferrer">
                     <h3 className="heading-tertiary step-tittle">
-                      Airbnb
+                      Nursia
                     </h3>
                   </a>
 
                   <p className="step-description">
-                    I successfully developed a replica of the Airbnb website,
-                    showcasing my proficiency in React and Node.js. This project
-                    exemplifies my skills in creating dynamic and responsive web applications.
+                    Developed a platform that digitizes handwritten nursing records using the OpenAI API,
+                    automatically generating centralized and securely managed digital files.
                   </p>
 
                   <div className="technology-used">
@@ -112,46 +108,6 @@ function Projects() {
                     <i className="bi bi-filetype-css"></i>
                   </div>
                 </div>
-              </div>
-            </li>
-          </VisibilitySensor>
-
-          <VisibilitySensor partialVisibility={1} onChange={!thirdProjectAlreadyShowed && setThirdProjectVisible}>
-            <li
-              className={`project ${thirdProjectVisible ? "left-right-animation" : "opacity-0"}`}
-              onAnimationEnd={() => {
-                setThirdProjectVisible(true);
-                setThirdProjectAlreadyShowed(true);
-              }}>
-
-              <div className="container grid grid--center-v grid-projects grid-projects-text-first">
-                <div className="step-text-box">
-                  <p className="step-number">03</p>
-
-                  <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
-
-                    <h3 className="heading-tertiary step-tittle">
-                      Resto
-                    </h3>
-                  </a>
-
-                  <p className="step-description">
-                    An HTML and CSS-based website for a fast food restaurant was created as a
-                    project to fulfill the requirements of a Web Development discipline
-                  </p>
-
-                  <div className="technology-used">
-                    <i className="bi bi-filetype-html"></i>
-                    <i className="bi bi-filetype-css"></i>
-                    <i className="bi bi-filetype-php"></i>
-                  </div>
-                </div>
-
-                <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
-                  <div className="step-image-box step-image-box-text-first">
-                    <img className="step-image" src={require('../util/projects/resto.jpg')} alt=""/>
-                  </div>
-                </a>
               </div>
             </li>
           </VisibilitySensor>
