@@ -73,7 +73,7 @@ function Hero() {
 
             <a
               className="button button--outline"
-              href="https://github.com/JoGabriel-Santos"
+              href="https://github.com/coder-gabrielsantos"
               target="_blank"
               rel="noreferrer"
             >
@@ -145,7 +145,7 @@ function Hero() {
           {/* GITHUB */}
           <li className="socials-icon">
             <a
-              href="https://github.com/JoGabriel-Santos"
+              href="https://github.com/coder-gabrielsantos"
               target="_blank"
               rel="noreferrer"
             >
