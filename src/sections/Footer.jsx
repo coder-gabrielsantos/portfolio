@@ -8,7 +8,7 @@ function Footer() {
     <footer className="section-footer" id="footer">
       <div className="container center-text">
         <div className="logo-column">
-          <a className="footer-logo container" href="#">
+          <a className="footer-logo container" href="#hero">
             <img className="logo" src={Logo} alt=""/>
           </a>
 
